@@ -156,20 +156,20 @@ Gameplay videos provide insight into:
 
 ---
 
-**Figure 5 — DQN Agent Gameplay**  
-![DQN Gameplay](assets/dqn.mp4)
+**Figure 5 — DQN Agent Gameplay** <video src="https://github.com/user-attachments/assets/dccac289-f705-43d7-baa2-3ec24ebd8383" width="100%" controls autoplay loop muted></video>
 
 ---
 
-**Figure 6 — Double DQN Agent Gameplay**  
-![DDQN Gameplay](assets/ddqn.mp4)
+**Figure 6 — Double DQN Agent Gameplay** <video src="https://github.com/user-attachments/assets/f273b23f-d14e-4d87-9d7d-5e6a49d39b87
+" width="100%" controls autoplay loop muted></video>
 
 ---
 
-**Figure 7 — Best Dueling DQN Agent Gameplay**  
-![Dueling DQN Best Run](assets/DUELING%20İNİŞ%20BEST.mp4)
+**Figure 7 — Best Dueling DQN Agent Gameplay** <video src="https://github.com/user-attachments/assets/c7da8aa6-282f-47af-b680-784049ad5dba
+" width="100%" controls autoplay loop muted></video>
 
 ---
+
 
 These rollouts help validate whether higher rewards correspond to genuinely better control policies rather than reward exploitation.
 
