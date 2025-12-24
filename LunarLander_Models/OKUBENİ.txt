@@ -1,0 +1,13 @@
+Kayıtlı Model Dosyaları ve Performans Analizi
+
+
+Dueling_final_full.pth (En İyi Model): 600 bölüm (episode) boyunca eğitilmiş en gelişmiş modeldir. Ortalamanın 200 puanı geçmesinden sonra da eğitime devam edilerek maksimum kararlılık ve pürüzsüz iniş performansı elde edilmiştir. Projenin ana başarılı sonucudur.
+
+Dueling_solved.pth (Eşik Modeli): Ajanın 100 bölüm ortalamasının ilk kez 200 puan barajını aştığı "çözüm" anında kaydedilmiştir. Eğitimin hangi noktada başarıya ulaştığını gösteren bir gelişim aşaması kaydıdır.
+
+DDQN_final.pth (En İyi Double DQN): Standart DQN'deki aşırı değer biçme (overestimation) hatasını önleyen Double DQN mimarisinin en iyi versiyonudur. Standart DQN'e göre çok daha stabil ve yüksek skorlu bir performans sergiler.
+
+DQN_final.pth (Temel Model): Herhangi bir ek geliştirme içermeyen standart Derin Q-Öğrenme modelidir. Diğer mimarilerin (Dueling ve Double) sağladığı performans artışını net bir şekilde görebilmek için referans (baseline) noktası olarak kullanılır.
+
+
+
